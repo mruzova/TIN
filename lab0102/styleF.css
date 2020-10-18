@@ -1,0 +1,50 @@
+.container {
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+.banner {
+    background: url('https://avatars.mds.yandex.net/get-pdb/2068503/999297c5-7999-449a-b261-4e5cc70c53ed/s1200?webp=false') no-repeat 60% 40%;
+    width: 100%;
+    background-color: steelblue;
+    margin-right: 11%;
+    margin-left: 11%;
+    height: 350px;
+    border: 5px solid steelblue;
+}
+
+header {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: 12%;
+}
+
+article {
+    margin-left: 13%;
+    margin-right: 30%;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+}
+
+article h2 {
+    border-bottom: 1px solid dimgray;
+}
+
+.container:last-child article {
+    margin-bottom: 50px;
+}
+
+a:hover {
+    color: darkcyan;
+}

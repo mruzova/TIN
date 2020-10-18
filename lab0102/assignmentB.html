@@ -5,25 +5,26 @@
     <meta charset="utf-8">
     <title>assigment B</title>
 
-    <link href="style.css" rel="stylesheet">
+    <link href="styleB.css" rel="stylesheet">
 </head>
 
 <body>
     <header>assignment B</header>
     <div class="form-container">
-        <div>
-            <label for="input1">text input</label>
+        <form>
+        <div class="div-container">
+            <label for="input1" class="mandatory-field">text input *</label>
             <input type="text" name="input1" placeholder="type something" id="input1">
         </div>
-        <div>
-            <label for="password">password</label>
+        <div  class="div-container">
+            <label for="password" class="mandatory-field">password *</label>
             <input type="password" name="password" id="password">
         </div>
-        <div>
+        <div  class="div-container">
             <label for="checkbox">checkbox</label>
             <input type="checkbox" id="checkbox" name="checkbox">
         </div>
-        <div class="radio-group">
+        <div class="radio-group div-container">
             <div>
                 <input type="radio" id="cat" name="cat" value="cat" checked>
                 <label for="cat">cat</label>
@@ -34,16 +35,25 @@
                 <label for="dog">dog</label>
             </div>
         </div>
-        <div>
-            <label for="cats">cats:</label>
+        <div  class="div-container">
+            <label for="cats" class="mandatory-field">cats: *</label>
 
-            <select name="cads" id="cads">
+            <select name="cats" id="cats">
   <option value="abyssinian">abyssinian</option>
   <option value="bengal">bengal</option>
   <option value="british shorthair">british shorthair</option>
   
 </select>
         </div>
+            <div class="div-container text">
+                <label for="text">textarea</label>
+                <textarea name="text" id="text" cols="40" rows="5"></textarea>
+            </div>
+            <div class="div-container">
+<button type="submit" class="submit">submit</button>
+<button type="reset" class="reset">reset</button>
+            </div>
+        </form>
     </div>
 </body>
 

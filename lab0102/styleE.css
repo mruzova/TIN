@@ -1,0 +1,30 @@
+.column {
+    float: left;
+    width: 48%;
+}
+
+.column:last-child {
+    margin-left: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column:first-child p {
+    margin-right: 10px;
+}
+
+.cursedcat {
+    float: left;
+    margin: 5px;
+    width: 150px;
+}
+
+.snat {
+    width: 150px;
+    margin: 5px;
+    float: right;
+}
