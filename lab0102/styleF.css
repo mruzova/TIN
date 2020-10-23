@@ -1,5 +1,5 @@
 .container {
-    background-color: white;
+    background-color: rgb(250, 240, 194);
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
@@ -7,17 +7,19 @@
 }
 
 body {
-    background-color: cornflowerblue;
+    background: url('https://i.pinimg.com/originals/e2/18/8e/e2188e1210a9b2e2873b67081fd9e2d5.png') 100% 0%;
+    ;
 }
 
 .banner {
-    background: url('https://avatars.mds.yandex.net/get-pdb/2068503/999297c5-7999-449a-b261-4e5cc70c53ed/s1200?webp=false') no-repeat 60% 40%;
+    background: url('https://i.pinimg.com/originals/64/03/90/6403903167e1d99de390f7dffd923628.jpg') no-repeat 42% 95%;
     width: 100%;
-    background-color: steelblue;
+    background-color: rgb(95, 22, 22);
+    ;
     margin-right: 11%;
     margin-left: 11%;
     height: 350px;
-    border: 5px solid steelblue;
+    border: 5px solid rgb(95, 22, 22);
 }
 
 header {
@@ -30,15 +32,16 @@ header {
 
 article {
     margin-left: 13%;
-    margin-right: 30%;
+    margin-right: 13%;
     margin-top: 10px;
     padding: 20px;
-    border: 1px solid grey;
-    background-color: lightgrey;
+    border: 2px dashed rgb(95, 22, 22);
+    background: rgb(245, 156, 68);
 }
 
 article h2 {
-    border-bottom: 1px solid dimgray;
+    color: rgb(95, 22, 22);
+    border-bottom: 3px solid #ffd900;
 }
 
 .container:last-child article {
@@ -46,5 +49,5 @@ article h2 {
 }
 
 a:hover {
-    color: darkcyan;
+    color: #ffd900;
 }
