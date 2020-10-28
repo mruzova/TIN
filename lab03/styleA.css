@@ -1,0 +1,65 @@
+header div {
+    display: flex;
+    justify-content: space-around;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.cat_header {
+    margin-top: 25px;
+    text-align: center;
+    transform: rotate(10deg);
+    width: 20%;
+    border-radius: 25px;
+    box-shadow: 5px 5px #888888;
+    margin-bottom: 35px;
+}
+
+.gallery img {
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.container {
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.column {
+    flex: 10%;
+    padding: 10px;
+}
+
+.sphynx,
+.kittens {
+    width: 100px;
+    float: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .column {
+        flex: 25%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    .column:first-child {
+        order: 6;
+    }
+}
