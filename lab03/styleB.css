@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Butcherman';
+    src: url('fonts/Butcherman-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Vibur';
+    src: url('fonts/Vibur-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Delius';
+    src: url('fonts/Delius-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    line-height: 25px;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(227, 188, 255, 1) 18%, rgba(148, 187, 233, 1) 100%);
+    font-family: 'Delius';
+}
+
+header div {
+    display: grid;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Butcherman';
+}
+
+.cat_header {
+    margin-top: 25px;
+    justify-self: center;
+    transform: rotate(10deg);
+    width: 20%;
+    border-radius: 25px;
+    box-shadow: 10px 10px #6d30df;
+    margin-bottom: 35px;
+}
+
+.container {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(15%, auto));
+    grid-column-gap: 1%;
+    margin: 0 auto;
+}
+
+.text-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(180px, 1fr));
+    grid-column-gap: 2%;
+}
+
+.sphynx,
+.kittens {
+    width: 100px;
+    float: left;
+}
+
+.gallery img {
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+footer {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Butcherman';
+}
+
+.quote {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+blockquote {
+    color: #6d30df;
+    font-family: 'Butcherman';
+    font-size: 15px;
+    margin: 0;
+    padding-top: 8px;
+    float: right;
+}
+
+a {
+    color: #6d30df;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffafee;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 45% 55%;
+        grid-column-gap: 0;
+    }
+    .gallery img {
+        width: 100%;
+    }
+    .text-container {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template-columns: 100%;
+    }
+    .text-container {
+        grid-template-columns: 100%;
+    }
+    .gallery img {
+        width: 100%;
+    }
+    .gallery {
+        grid-row-start: 2;
+    }
+    footer {
+        font-size: 20px;
+    }
+}

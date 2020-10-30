@@ -1,161 +1,161 @@
-                @font-face {
-                    font-family: 'Butcherman';
-                    src: url('fonts/Butcherman-Regular.ttf') format('truetype');
-                    font-weight: normal;
-                }
-                
-                @font-face {
-                    font-family: 'Vibur';
-                    src: url('fonts/Vibur-Regular.ttf') format('truetype');
-                    font-weight: normal;
-                }
-                
-                @font-face {
-                    font-family: 'Delius';
-                    src: url('fonts/Delius-Regular.ttf') format('truetype');
-                    font-weight: normal;
-                }
-                
-                body {
-                    line-height: 25px;
-                    background: rgb(238, 174, 202);
-                    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(227, 188, 255, 1) 18%, rgba(148, 187, 233, 1) 100%);
-                    font-family: 'Delius';
-                }
-                
-                header div {
-                    display: flex;
-                    justify-content: space-around;
-                }
-                
-                header h2 {
-                    text-align: center;
-                    font-size: 50px;
-                    font-family: 'Butcherman';
-                }
-                
-                .cat_header {
-                    margin-top: 25px;
-                    text-align: center;
-                    transform: rotate(10deg);
-                    width: 20%;
-                    border-radius: 25px;
-                    box-shadow: 10px 10px #6d30df;
-                    margin-bottom: 35px;
-                }
-                
-                .gallery img {
-                    margin-bottom: 10px;
-                    width: 250px;
-                }
-                
-                .container,
-                .container-text {
-                    display: flex;
-                    justify-content: space-between;
-                }
-                
-                .container-text {
-                    flex-wrap: wrap;
-                }
-                
-                .container {
-                    margin-right: 3%;
-                    margin-left: 3%;
-                    margin-top: 20px;
-                }
-                
-                figure {
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-                
-                .column {
-                    flex: 10%;
-                    padding: 10px;
-                }
-                
-                .sphynx,
-                .kittens {
-                    width: 100px;
-                    float: left;
-                }
-                
-                footer {
-                    text-align: center;
-                    font-size: 30px;
-                    font-family: 'Butcherman';
-                }
-                
-                .quote {
-                    width: 55%;
-                    text-align: center;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                    float: left;
-                }
-                
-                p {
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                }
-                
-                blockquote {
-                    color: #6d30df;
-                    font-family: 'Butcherman';
-                    font-size: 15px;
-                    margin: 0;
-                    padding-top: 8px;
-                }
-                
-                a {
-                    color: #6d30df;
-                    text-decoration: none;
-                }
-                
-                a:hover {
-                    color: #ffafee;
-                }
-                
-                @media screen and (max-width: 1200px) {
-                    .column {
-                        flex: 25%;
-                    }
-                    @media screen and (max-width: 1024px) {
-                        .column {
-                            flex: 50%;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                        }
-                        .column p {
-                            margin-bottom: 0;
-                        }
-                        .gallery img {
-                            width: 300px;
-                        }
-                        .container-text {
-                            display: block;
-                        }
-                        .column:nth-child(4),
-                        .column:nth-child(5) {
-                            margin-top: 0;
-                            margin-bottom: 0;
-                        }
-                    }
-                    @media screen and (max-width: 800px) {
-                        .container-text,
-                        .container {
-                            flex-direction: column;
-                        }
-                        .gallery {
-                            order: 6;
-                        }
-                        .gallery img {
-                            width: 100%;
-                        }
-                        footer {
-                            font-size: 20px;
-                        }
-                    }
-                }
+@font-face {
+    font-family: 'Butcherman';
+    src: url('fonts/Butcherman-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Vibur';
+    src: url('fonts/Vibur-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Delius';
+    src: url('fonts/Delius-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    line-height: 25px;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(227, 188, 255, 1) 18%, rgba(148, 187, 233, 1) 100%);
+    font-family: 'Delius';
+}
+
+header div {
+    display: flex;
+    justify-content: space-around;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Butcherman';
+}
+
+.cat_header {
+    margin-top: 25px;
+    text-align: center;
+    transform: rotate(10deg);
+    width: 20%;
+    border-radius: 25px;
+    box-shadow: 10px 10px #6d30df;
+    margin-bottom: 35px;
+}
+
+.gallery img {
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.container,
+.container-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-text {
+    flex-wrap: wrap;
+}
+
+.container {
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+figure {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.column {
+    flex: 10%;
+    padding: 10px;
+}
+
+.sphynx,
+.kittens {
+    width: 100px;
+    float: left;
+}
+
+footer {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Butcherman';
+}
+
+.quote {
+    width: 55%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+blockquote {
+    color: #6d30df;
+    font-family: 'Butcherman';
+    font-size: 15px;
+    margin: 0;
+    padding-top: 8px;
+}
+
+a {
+    color: #6d30df;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffafee;
+}
+
+@media screen and (max-width: 1200px) {
+    .column {
+        flex: 25%;
+    }
+    @media screen and (max-width: 1024px) {
+        .column {
+            flex: 50%;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .column p {
+            margin-bottom: 0;
+        }
+        .gallery img {
+            width: 300px;
+        }
+        .container-text {
+            display: block;
+        }
+        .column:nth-child(4),
+        .column:nth-child(5) {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .container-text,
+        .container {
+            flex-direction: column;
+        }
+        .gallery {
+            order: 6;
+        }
+        .gallery img {
+            width: 100%;
+        }
+        footer {
+            font-size: 20px;
+        }
+    }
+}
