@@ -18,4 +18,4 @@ function binarySearch(array, number) {
     return false;
 }
 var array = [3, 1, 5, 8, 2, 1, 0];
-console.log(binarySearch(array, 1));
+console.log(binarySearch(array, 1)); 
