@@ -11,7 +11,7 @@ function createStudent(fname, lname, id) {
     stud.firstName = fname;
     stud.lastName = lname;
     stud.id = id;
-    stud.prototype = studentProto;
+    stud.courses = studentProto.courses;
     return stud;
 }
 console.log(createStudent('Maryia', 'Ruzava', 's18822'))
