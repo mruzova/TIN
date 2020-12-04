@@ -1,16 +1,19 @@
 const fs = require('fs');
 
 
-const pathFile = "D:\\5sem\\TIN\\tin\\lab07\\dir\\";
 
-fs.watch(pathFile, (eventType, filename) => {
-    if (eventType === 'change') {
-        fs.readFile(pathFile + filename, (error, content) => {
-            if (error) {
-                console.log("error! " + error);
-            }
-            console.log("the file named " + filename + " was modified");
-            console.log("the content of the file: " + content);
-        });
-    }
-})
+function printContent(dirPath) {
+    fs.watch(dirPath, (eventType, filename) => {
+        if (eventType === 'change') {
+            fs.readFile(dirPath + filename, (error, content) => {
+                if (error) {
+                    console.log("error! " + error);
+                }
+                console.log("the file named " + filename + " was modified");
+                console.log("the content of the file: " + content);
+            });
+        }
+    })
+}
+const dirPath = "dir\\";
+printContent(dirPath);
