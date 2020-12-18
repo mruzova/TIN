@@ -5,10 +5,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const port = 4334;
 app.set('views', '/views');
 app.set('view engine', 'pug');
-
+app.use(express.json());
 app.post('/jsondata', function(req, res) {
-    console.log('ll' + req.body.firstname);
-    res.render(__dirname + '/views/8d.pug', {
+    res.render(`${__dirname}/views/8d.pug`, {
         title: '8d',
         firstname: req.body.firstname,
         lastname: req.body.lastname,
