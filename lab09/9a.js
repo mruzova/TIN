@@ -10,8 +10,6 @@ app.post('/9a', [check('number1').isNumeric(),
 ], (req, res) => {
     console.log(req.body);
 
-
-
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.json({ errors: errors.array() });
@@ -19,6 +17,7 @@ app.post('/9a', [check('number1').isNumeric(),
     let number1 = parseInt(req.body.number1);
     let op = req.body.operator;
     let number2 = parseInt(req.body.number2);
+    let result;
     if (op === '+') {
         result = number1 + number2;
     }  
@@ -33,7 +32,5 @@ app.post('/9a', [check('number1').isNumeric(),
     }
 
     res.json({ result: result });
-
-
 });
 app.listen(1011);
